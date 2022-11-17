@@ -2,19 +2,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <style>
-      html {
-        min-height: 5em;
-        min-width: 10em;
-        background: salmon;
-      }
-    </style>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <script src="main.js"></script>
+    <style></style>
   </head>
   <body>
-    <p>Hello, world!</p>
-    <ul>
-      <li><button>Where's Waldo? (all)</button></li>
-      <li><button>Where's Waldo? (hide)</button></li>
-    </ul>
+    <label class="switch">
+      <input id="toggle" type="checkbox" />
+      <span class="slider"></span>
+    </label>
+    <p>Please popup</p>
+    <button id="all" type="button">Where's Waldo? (all)</button>
+    <button id="one" type="button">Where's Waldo? (hide)</button>
   </body>
 </html>

@@ -1,4 +1,17 @@
-if (confirm("Play 'Where's Waldo'? (click no to replace all)")) {
+// chrome.runtime.onMessage.addListener((msg, sender, res) => {
+//   console.log("its working!");
+//   if (msg.command === "one") {
+//     alert("one");
+//     console.log("one");
+//     toggleLonely();
+//   } else if (msg.command === "all") {
+//     alert("all");
+//     console.log("all");
+//     toggleScroll();
+//   }
+// });
+
+if (confirm("Play Where's Waldo? (click cancel to mess with all pics)")) {
   toggleLonely();
 } else {
   toggleScroll();
