@@ -15,9 +15,10 @@
     },
     "content_scripts": [
     {
-      "matches": ["https://www.cnn.com/*","https://www.google.com/*","https://www.foxnews.com/*"],
+      "matches": ["https://www.cnn.com/*","https://*/*"],
       "css":["styles.css"],
-      "js": ["scripts/content-script.js"]
+      "js": ["scripts/content-script.js"],
+      "run_at":"document_end"
     }
   ],
 //   "web_accessible_resources": [
@@ -28,7 +29,7 @@
 //   ],
   "permissions": ["activeTab","tabs","bookmarks","scripting"],
   "background": {
-    "service_worker": "scripts/background.js"
+    "service_worker": "scripts/background.js" 
   }
 }
 
